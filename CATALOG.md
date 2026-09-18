@@ -1,7 +1,9 @@
 # Asset Catalog
 
-18 unique images. All watercolor-on-cream storybook style, warm autumn palette.
-Two exact duplicates were removed (verified by file hash).
+18 character/collection images + 3 canon sheets. All watercolor-on-cream storybook
+style, warm autumn palette. Two exact duplicates were removed (verified by file hash).
+
+Locked decisions: legacy look + integrated text — see `docs/canon-decisions.md`.
 
 ## Amara (`assets/amara/`)
 
@@ -19,8 +21,8 @@ Two exact duplicates were removed (verified by file hash).
 | File | Size | Was | Description |
 |---|---|---|---|
 | `micah-01-turnaround-bucket.png` | 1402×1122 | `A003 …` | 4-view turnaround + face closeup, wooden bucket |
-| `micah-02-face-closeup-scarf.png` | 1122×1402 | `A006 …` | Face closeup, cream knit scarf |
-| `micah-03-fullbody-scarf.png` | 1122×1402 | `A007 …` | Full-body, rust overalls, cream scarf |
+| `micah-02-face-closeup-scarf.png` | 1122×1402 | `A006 …` | Face closeup (legacy scarf study — scarf NOT canon) |
+| `micah-03-fullbody-scarf.png` | 1122×1402 | `A007 …` | Full-body (legacy scarf study — scarf NOT canon) |
 | `micah-scripture-philippians-4-13.png` | 1122×1402 | `… Jul 19 …07_30_24 …` | "I can do all things through Christ" print |
 
 ## Mama (`assets/mama/`)
@@ -46,6 +48,14 @@ Two exact duplicates were removed (verified by file hash).
 | `assets/family/family-lineup.png` | 1681×935 | `… 06_13_15 …` | Papa / Mama / Amara / Micah scale lineup |
 | `assets/collection/title-gathering-meadow-treasures.jpg` | 2400×1792 | `Siblings_gathering…jpeg` | Collection title art, fence + meadow |
 
+## Canon kit (`assets/canon/`) — generated + QA'd this repo
+
+| File | Locks |
+|---|---|
+| `house-porch-sheet.png` | White farmhouse, covered porch, simple rail, EXACTLY 3 steps |
+| `wagon-sheet.png` | Light-wood wagon, 4 dark wheels; jug + sage blanket + cross Bible |
+| `prop-sheet.png` | Oval woven basket, brown cross Bible, sage blanket, water jug |
+
 ## Removed duplicates
 
 - `ChatGPT Image Aug 7, 2026, 06_15_15 PM (1).png` — identical to `A004` → kept Amara-01
@@ -54,23 +64,24 @@ Two exact duplicates were removed (verified by file hash).
 ## Docs
 
 - `docs/golden-leaf-chatgpt-adapter-15-units.md` — 15-unit prompt package (authoritative text + scenes)
+- `docs/canon-decisions.md` — locked canon: legacy look, integrated text, prop continuity
 
-## Book-unit checklist (`book/`)
+## Book-unit checklist (`book/`, TEXT MODE A)
 
 | Unit | Pages | Scene | Status |
 |---|---|---|---|
-| 1 | 4–5 | Porch send-off, pack wagon | ✅ sample |
-| 2 | 6–7 | Golden leaf catch | ⬜ |
-| 3 | 8–9 | Acorns for the squirrel | ⬜ |
-| 4 | 10–11 | Path walk, one leaf left | ⬜ |
-| 5 | 12–13 | Feather for the bird | ⬜ |
-| 6 | 14–15 | Flowers for bees/butterflies | ⬜ |
-| 7 | 16–17 | Bumpy path, cry in grass | ⬜ |
-| 8 | 18–19 | Care for the lamb | ⬜ |
-| 9 | 20–21 | Bible rest under the oak | ⬜ |
-| 10 | 22–23 | Creek-side worry | ⬜ |
-| 11 | 24–25 | WHOOSH — leaf blows away | ⬜ |
-| 12 | 26–27 | Ant bridge reveal | ✅ sample |
-| 13 | 28–29 | Counting + prayer | ⬜ |
-| 14 | 30–31 | Golden-hour return / supper | ⬜ |
-| 15 | 32 | Retelling (solo 1:1 page) | ⬜ |
+| 1 | 4–5 | Porch send-off, pack wagon | ✅ approved (legacy + verbatim text) |
+| 2 | 6–7 | Golden leaf catch | ⬜ next (pilot) |
+| 3 | 8–9 | Acorns for the squirrel | ⬜ next (pilot) |
+| 4 | 10–11 | Path walk, one leaf left | ⬜ batch |
+| 5 | 12–13 | Feather for the bird | ⬜ batch |
+| 6 | 14–15 | Flowers for bees/butterflies | ⬜ batch |
+| 7 | 16–17 | Bumpy path, cry in grass | ⬜ batch |
+| 8 | 18–19 | Care for the lamb | ⬜ batch |
+| 9 | 20–21 | Bible rest under the oak | ⬜ batch |
+| 10 | 22–23 | Creek-side worry | ⬜ batch |
+| 11 | 24–25 | WHOOSH — leaf blows away | ⬜ batch |
+| 12 | 26–27 | Ant bridge reveal | ✅ approved (legacy + verbatim text) |
+| 13 | 28–29 | Counting + prayer | ⬜ batch |
+| 14 | 30–31 | Golden-hour return / supper | ⬜ batch |
+| 15 | 32 | Retelling (solo 1:1 page) | ⬜ batch |

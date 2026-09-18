@@ -6,34 +6,38 @@ Picture-book project: **"The Golden Leaf of Harvest Meadow"** — Amara (~5) & M
 ## Folder structure
 
 ```
-assets/                  Character reference & collection art (canon look)
+assets/                  Reference art (attached to every generation)
   amara/                 Amara sheets: front, closeup, back, profiles, scripture print
   micah/                 Micah sheets: turnaround, closeups, full-body, scripture print
   mama/                  Mama turnaround, expression sheet, hero full-body
   papa/                  Papa turnaround, expression sheet, hero full-body
   family/                Full-family lineup / scale chart
   collection/            Collection title art
-book/                    Generated book spreads (Units 1–15) — TEXT MODE B (no text)
-docs/                    Production docs (adapter sheet with all 15 prompts + full text)
+  canon/                 Setting/prop lock: house-porch, wagon, props
+book/                    Generated book spreads (Units 1–15), TEXT MODE A (integrated text)
+docs/                    Production docs: adapter, canon decisions
 CATALOG.md               Full asset inventory + book-unit checklist
 ```
 
 ## How book images are made here
 
-Yes — we generate them in this repo with the image tool, using:
+Every spread is generated with visual anchors (not words alone):
 
-1. **References** from `assets/` (faces, skin tones, watercolor style).
-2. **Prompts** from `docs/golden-leaf-chatgpt-adapter-15-units.md` (scene, continuity, exclusions).
-3. **TEXT MODE B** — illustrations are generated *without* text (avoids paraphrase/garbled-letter
-   risk); the exact manuscript text is typeset separately in layout.
+1. **References** from `assets/` — character faces/outfits + `assets/canon/` sheets
+   (house = exactly 3 steps, wagon build, basket/Bible/blanket/jug).
+2. **Prompts** from `docs/golden-leaf-chatgpt-adapter-15-units.md` + legacy character
+   block in `docs/canon-decisions.md`.
+3. **TEXT MODE A** — story text rendered in the illustration, then QA'd
+   character-for-character; failures regenerate (max 2x) before fallback.
 
-Art direction follows the adapter canon: small muted-rust bows low near Amara's ears
-(no sunflower bows), no bandana/neckerchief/scarf, no jewelry. Legacy reference art in
-`assets/` still shows the older accessories — it is kept for face/style consistency only.
+Locked look = **legacy**: sunflower bows + rust bandana on Amara; no scarf on Micah.
+See `docs/canon-decisions.md`.
 
 ## Status
 
 - [x] Assets organized, duplicates removed, cataloged
-- [x] Sample spreads: Unit 1, Unit 12
-- [ ] Remaining spreads: Units 2–11, 13–15
-- [ ] Layout with typeset text (preview + print)
+- [x] Canon kit: house, wagon, prop sheets
+- [x] Canon locked: legacy look + integrated text
+- [ ] Pilot spreads: Units 1–3 (1, 12 approved; 2, 3 next)
+- [ ] Batch: Units 4–15
+- [ ] Final QA + print layout
