@@ -71,17 +71,17 @@ Locked decisions: legacy look + integrated text — see `docs/canon-decisions.md
 | Unit | Pages | Scene | Status |
 |---|---|---|---|
 | 1 | 4–5 | Porch send-off, pack wagon | ✅ approved (legacy + verbatim text) |
-| 2 | 6–7 | Golden leaf catch | ⬜ next (pilot) |
-| 3 | 8–9 | Acorns for the squirrel | ⬜ next (pilot) |
-| 4 | 10–11 | Path walk, one leaf left | ⬜ batch |
-| 5 | 12–13 | Feather for the bird | ⬜ batch |
-| 6 | 14–15 | Flowers for bees/butterflies | ⬜ batch |
-| 7 | 16–17 | Bumpy path, cry in grass | ⬜ batch |
-| 8 | 18–19 | Care for the lamb | ⬜ batch |
-| 9 | 20–21 | Bible rest under the oak | ⬜ batch |
-| 10 | 22–23 | Creek-side worry | ⬜ batch |
-| 11 | 24–25 | WHOOSH — leaf blows away | ⬜ batch |
+| 2 | 6–7 | Golden leaf catch | ✅ approved |
+| 3 | 8–9 | Acorns for the squirrel | ❌ regen: added quote on Plink! Plunk! |
+| 4 | 10–11 | Path walk, one leaf left | ❌ regen: double quotes + empty wagon |
+| 5 | 12–13 | Feather for the bird | ❌ regen: double quotes |
+| 6 | 14–15 | Flowers for bees/butterflies | ✅ approved |
+| 7 | 16–17 | Bumpy path, cry in grass | ❌ regen: passage wrapped in quotes |
+| 8 | 18–19 | Care for the lamb | ✅ approved |
+| 9 | 20–21 | Bible rest under the oak | ⏳ queued (turn limit) |
+| 10 | 22–23 | Creek-side worry | ✅ approved |
+| 11 | 24–25 | WHOOSH — leaf blows away | ❌ regen: double quotes + static pose |
 | 12 | 26–27 | Ant bridge reveal | ✅ approved (legacy + verbatim text) |
-| 13 | 28–29 | Counting + prayer | ⬜ batch |
-| 14 | 30–31 | Golden-hour return / supper | ⬜ batch |
-| 15 | 32 | Retelling (solo 1:1 page) | ⬜ batch |
+| 13 | 28–29 | Counting + prayer | ⏳ queued (turn limit) |
+| 14 | 30–31 | Golden-hour return / supper | ⏳ queued (turn limit) |
+| 15 | 32 | Retelling (solo 1:1 page) | ✅ approved |

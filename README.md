@@ -38,6 +38,6 @@ See `docs/canon-decisions.md`.
 - [x] Assets organized, duplicates removed, cataloged
 - [x] Canon kit: house, wagon, prop sheets
 - [x] Canon locked: legacy look + integrated text
-- [ ] Pilot spreads: Units 1–3 (1, 12 approved; 2, 3 next)
-- [ ] Batch: Units 4–15
+- [x] Batch 1: Units 2-8, 10, 11, 15 generated, 5 approved (7 total: 1, 2, 6, 8, 10, 12, 15)
+- [ ] Batch 2: regens (3, 4, 5, 7, 11) + new (9, 13, 14)
 - [ ] Final QA + print layout
