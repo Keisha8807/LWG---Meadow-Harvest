@@ -40,7 +40,7 @@ See `docs/canon-decisions.md`.
 - [x] Canon locked: legacy look + integrated text
 - [x] Batch 1: Units 2-8, 10, 11, 15 generated, 5 approved (7 total: 1, 2, 6, 8, 10, 12, 15)
 - [x] Batch 2: 4 approved (11 total: 1-4, 6, 8, 10-13, 15)
-- [ ] Batch 3: final regens (5, 7, 9, 14)
+- [x] Batch 3: all 15 spreads approved — MAIN BOOK COMPLETE
 - [ ] Final QA + print layout
 - [ ] Coloring book: cover + 12 pages (p02 approved, lineup in docs/product-line.md)
 - [ ] Wall art: 6-print set (p06 approved, 2 exist in assets/, 3 to go)

@@ -74,14 +74,14 @@ Locked decisions: legacy look + integrated text — see `docs/canon-decisions.md
 | 2 | 6–7 | Golden leaf catch | ✅ approved |
 | 3 | 8–9 | Acorns for the squirrel | ✅ approved |
 | 4 | 10–11 | Path walk, one leaf left | ✅ approved |
-| 5 | 12–13 | Feather for the bird | ❌ regen x2 failed on doubles (final attempt next) |
+| 5 | 12–13 | Feather for the bird | ✅ approved |
 | 6 | 14–15 | Flowers for bees/butterflies | ✅ approved |
-| 7 | 16–17 | Bumpy path, cry in grass | ❌ regen x2 failed on doubles (final attempt next) |
+| 7 | 16–17 | Bumpy path, cry in grass | ✅ approved |
 | 8 | 18–19 | Care for the lamb | ✅ approved |
-| 9 | 20–21 | Bible rest under the oak | ❌ regen: double quotes |
+| 9 | 20–21 | Bible rest under the oak | ✅ approved |
 | 10 | 22–23 | Creek-side worry | ✅ approved |
 | 11 | 24–25 | WHOOSH — leaf blows away | ✅ approved |
 | 12 | 26–27 | Ant bridge reveal | ✅ approved (legacy + verbatim text) |
 | 13 | 28–29 | Counting + prayer | ✅ approved |
-| 14 | 30–31 | Golden-hour return / supper | ❌ regen: duplicated Micah |
+| 14 | 30–31 | Golden-hour return / supper | ✅ approved |
 | 15 | 32 | Retelling (solo 1:1 page) | ✅ approved |
