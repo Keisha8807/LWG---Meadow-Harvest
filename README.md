@@ -41,3 +41,5 @@ See `docs/canon-decisions.md`.
 - [x] Batch 1: Units 2-8, 10, 11, 15 generated, 5 approved (7 total: 1, 2, 6, 8, 10, 12, 15)
 - [ ] Batch 2: regens (3, 4, 5, 7, 11) + new (9, 13, 14)
 - [ ] Final QA + print layout
+- [ ] Coloring book: cover + 12 pages (p02 approved, lineup in docs/product-line.md)
+- [ ] Wall art: 6-print set (p06 approved, 2 exist in assets/, 3 to go)
