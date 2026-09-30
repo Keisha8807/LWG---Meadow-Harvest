@@ -11,17 +11,17 @@ Each page converts its source spread's composition (spread attached as reference
 
 | File | Title | Source | Status |
 |---|---|---|---|
-| `cover-coloring-book.png` | Harvest Meadow Coloring Book | new | ⬜ |
-| `page-01-packing-the-wagon.png` | Packing the Wagon | Unit 1 | ⬜ |
+| `cover-coloring-book.png` | Harvest Meadow Coloring Book | new | ✅ approved |
+| `page-01-packing-the-wagon.png` | Packing the Wagon | Unit 1 | ✅ approved |
 | `page-02-our-first-treasure.png` | Our First Treasure | Unit 2 | ✅ approved (was style sample) |
-| `page-03-acorns-for-the-squirrel.png` | Acorns for the Squirrel | Unit 3 | ⬜ needs approved U3 first |
-| `page-04-feather-for-the-bird.png` | A Feather for the Bird | Unit 5 | ⬜ needs approved U5 first |
-| `page-05-flowers-for-the-bees.png` | Flowers for the Bees | Unit 6 | ⬜ |
-| `page-06-care-for-the-lamb.png` | Care for the Lamb | Unit 8 | ⬜ |
-| `page-07-resting-under-the-oak.png` | Resting Under the Oak | Unit 9 | ⬜ needs U9 first |
-| `page-08-whoosh.png` | Whoosh! | Unit 11 | ⬜ needs approved U11 first |
-| `page-09-bridge-for-the-ants.png` | A Bridge for the Ants | Unit 12 | ⬜ |
-| `page-10-five-blessings-shared.png` | Five Blessings Shared | Unit 13 | ⬜ needs U13 first |
+| `page-03-acorns-for-the-squirrel.png` | Acorns for the Squirrel | Unit 3 | ✅ approved |
+| `page-04-feather-for-the-bird.png` | A Feather for the Bird | Unit 5 | ✅ approved |
+| `page-05-flowers-for-the-bees.png` | Flowers for the Bees | Unit 6 | ✅ approved |
+| `page-06-care-for-the-lamb.png` | Care for the Lamb | Unit 8 | ✅ approved |
+| `page-07-resting-under-the-oak.png` | Resting Under the Oak | Unit 9 | ✅ approved |
+| `page-08-whoosh.png` | Whoosh! | Unit 11 | ✅ approved |
+| `page-09-bridge-for-the-ants.png` | A Bridge for the Ants | Unit 12 | ✅ approved |
+| `page-10-five-blessings-shared.png` | Five Blessings Shared | Unit 13 | ✅ approved |
 | `page-11-coming-home.png` | Coming Home | Unit 14 | ⬜ needs U14 first |
 | `page-12-hearts-were-full.png` | Hearts Were Full | Unit 15 | ⬜ |
 

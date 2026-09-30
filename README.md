@@ -42,5 +42,5 @@ See `docs/canon-decisions.md`.
 - [x] Batch 2: 4 approved (11 total: 1-4, 6, 8, 10-13, 15)
 - [x] Batch 3: all 15 spreads approved — MAIN BOOK COMPLETE
 - [ ] Final QA + print layout
-- [ ] Coloring book: cover + 12 pages (p02 approved, lineup in docs/product-line.md)
+- [x] Coloring book batch 1: cover + pp01-10 approved (11/13 files); pp11-12 + wall art next
 - [ ] Wall art: 6-print set (p06 approved, 2 exist in assets/, 3 to go)
