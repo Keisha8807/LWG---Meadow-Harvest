@@ -16,7 +16,7 @@ Each page converts its source spread's composition (spread attached as reference
 | `page-02-our-first-treasure.png` | Our First Treasure | Unit 2 | ✅ approved (was style sample) |
 | `page-03-acorns-for-the-squirrel.png` | Acorns for the Squirrel | Unit 3 | ✅ approved |
 | `page-04-feather-for-the-bird.png` | A Feather for the Bird | Unit 5 | ✅ approved |
-| `page-05-flowers-for-the-bees.png` | Flowers for the Bees | Unit 6 | ✅ approved |
+| `page-05-flowers-for-the-bees.png` | Flowers for the Bees | Unit 6 | ❌ regen: filled-black butterfly |
 | `page-06-care-for-the-lamb.png` | Care for the Lamb | Unit 8 | ✅ approved |
 | `page-07-resting-under-the-oak.png` | Resting Under the Oak | Unit 9 | ✅ approved |
 | `page-08-whoosh.png` | Whoosh! | Unit 11 | ✅ approved |
