@@ -44,3 +44,5 @@ See `docs/canon-decisions.md`.
 - [ ] Final QA + print layout
 - [x] Coloring book batch 1: 11/13 approved (cover + 10 pages)
 - [x] Final batch: p05/p11/p12 + wall art 01-03 — PRODUCT LINE COMPLETE (15 book + 13 coloring + 6 wall art)
+- [x] Preview flip-book: preview/index.html (storybook + coloring + wall art)
+- [x] Print prep: docs/print-prep.md (KDP + Etsy spec sheet, measured)
