@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gathering Meadow Treasures — Product Line Preview</title>
+<style>
+  :root{
+    --cream:#faf5ea; --ink:#3d3226; --rust:#b3562e; --gold:#d9a441;
+    --sage:#8a9b6e; --card:#fffdf7; --line:#e5d9c3;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--cream); color:var(--ink); font-family:Georgia,'Times New Roman',serif; min-height:100vh;}
+  header{text-align:center; padding:28px 16px 8px;}
+  header h1{font-size:clamp(1.5rem,4vw,2.4rem); letter-spacing:.5px;}
+  header h1 .leaf{color:var(--sage);}
+  header p{font-style:italic; opacity:.75; margin-top:6px;}
+  .tabs{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; padding:18px 12px 4px;}
+  .tab{font-family:inherit; font-size:1rem; padding:10px 22px; border-radius:999px; cursor:pointer;
+    border:2px solid var(--line); background:var(--card); color:var(--ink); transition:all .15s;}
+  .tab:hover{border-color:var(--gold);}
+  .tab.active{background:var(--rust); border-color:var(--rust); color:#fff; font-weight:bold;}
+  .tab .n{opacity:.7; font-size:.85em;}
+  .stage{max-width:1100px; margin:14px auto 0; padding:0 16px; position:relative;}
+  .frame{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px;
+    box-shadow:0 6px 24px rgba(61,50,38,.10);}
+  .frame img{display:block; width:100%; height:auto; max-height:68vh; object-fit:contain;
+    border-radius:8px; background:#fff; cursor:zoom-in;}
+  .caption{display:flex; justify-content:space-between; align-items:center; gap:12px;
+    padding:12px 4px 2px; flex-wrap:wrap;}
+  .caption h2{font-size:1.15rem;}
+  .counter{font-style:italic; opacity:.7; white-space:nowrap;}
+  .nav{display:flex; justify-content:center; gap:14px; margin:16px 0 6px;}
+  .nav button{font-family:inherit; font-size:1.05rem; padding:10px 26px; border-radius:999px; cursor:pointer;
+    border:2px solid var(--rust); background:transparent; color:var(--rust); transition:all .15s;}
+  .nav button:hover:not(:disabled){background:var(--rust); color:#fff;}
+  .nav button:disabled{opacity:.3; cursor:default;}
+  .thumbs{display:flex; gap:8px; overflow-x:auto; padding:12px 16px 26px; max-width:1100px; margin:0 auto;}
+  .thumbs img{height:64px; width:auto; border-radius:6px; cursor:pointer; opacity:.55;
+    border:2px solid transparent; background:#fff; flex-shrink:0;}
+  .thumbs img:hover{opacity:.9;}
+  .thumbs img.sel{opacity:1; border-color:var(--rust);}
+  footer{text-align:center; padding:0 16px 30px; font-size:.85rem; opacity:.6; font-style:italic;}
+  kbd{background:#eee5d3; border-radius:4px; padding:1px 6px; font-family:inherit;}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="leaf">❧</span> Gathering Meadow Treasures <span class="leaf">❧</span></h1>
+  <p>Amara &amp; Micah &mdash; complete product line preview</p>
+</header>
+
+<div class="tabs" id="tabs"></div>
+
+<div class="stage">
+  <div class="frame">
+    <img id="main" src="" alt="preview">
+    <div class="caption">
+      <h2 id="cap"></h2>
+      <span class="counter" id="count"></span>
+    </div>
+  </div>
+  <div class="nav">
+    <button id="prev">← Previous</button>
+    <button id="next">Next →</button>
+  </div>
+</div>
+
+<div class="thumbs" id="thumbs"></div>
+
+<footer>Tip: use <kbd>←</kbd> <kbd>→</kbd> arrow keys to flip pages &nbsp;·&nbsp; click any image to open full-size</footer>
+
+<script>
+const DATA = {
+  book: {
+    label: "📖 Storybook",
+    items: [
+      ["../book/unit-01-pages-04-05.png", "Unit 1 · Pages 4–5 — Porch & Packing"],
+      ["../book/unit-02-pages-06-07.png", "Unit 2 · Pages 6–7"],
+      ["../book/unit-03-pages-08-09.png", "Unit 3 · Pages 8–9"],
+      ["../book/unit-04-pages-10-11.png", "Unit 4 · Pages 10–11"],
+      ["../book/unit-05-pages-12-13.png", "Unit 5 · Pages 12–13"],
+      ["../book/unit-06-pages-14-15.png", "Unit 6 · Pages 14–15 — Flowers for the Bees"],
+      ["../book/unit-07-pages-16-17.png", "Unit 7 · Pages 16–17"],
+      ["../book/unit-08-pages-18-19.png", "Unit 8 · Pages 18–19"],
+      ["../book/unit-09-pages-20-21.png", "Unit 9 · Pages 20–21"],
+      ["../book/unit-10-pages-22-23.png", "Unit 10 · Pages 22–23"],
+      ["../book/unit-11-pages-24-25.png", "Unit 11 · Pages 24–25"],
+      ["../book/unit-12-pages-26-27.png", "Unit 12 · Pages 26–27"],
+      ["../book/unit-13-pages-28-29.png", "Unit 13 · Pages 28–29"],
+      ["../book/unit-14-pages-30-31.png", "Unit 14 · Pages 30–31 — Coming Home"],
+      ["../book/unit-15-page-32.png", "Unit 15 · Page 32 — Hearts Were Full"]
+    ]
+  },
+  coloring: {
+    label: "🖍️ Coloring Book",
+    items: [
+      ["../coloring-book/cover-coloring-book.png", "Cover — Amara and Micah's Meadow Treasures"],
+      ["../coloring-book/page-01-packing-the-wagon.png", "Page 1 — Packing the Wagon"],
+      ["../coloring-book/page-02-our-first-treasure.png", "Page 2 — Our First Treasure"],
+      ["../coloring-book/page-03-acorns-for-the-squirrel.png", "Page 3 — Acorns for the Squirrel"],
+      ["../coloring-book/page-04-feather-for-the-bird.png", "Page 4 — Feather for the Bird"],
+      ["../coloring-book/page-05-flowers-for-the-bees.png", "Page 5 — Flowers for the Bees"],
+      ["../coloring-book/page-06-care-for-the-lamb.png", "Page 6 — Care for the Lamb"],
+      ["../coloring-book/page-07-resting-under-the-oak.png", "Page 7 — Resting Under the Oak"],
+      ["../coloring-book/page-08-whoosh.png", "Page 8 — Whoosh!"],
+      ["../coloring-book/page-09-bridge-for-the-ants.png", "Page 9 — Bridge for the Ants"],
+      ["../coloring-book/page-10-five-blessings-shared.png", "Page 10 — Five Blessings Shared"],
+      ["../coloring-book/page-11-coming-home.png", "Page 11 — Coming Home"],
+      ["../coloring-book/page-12-hearts-were-full.png", "Page 12 — Hearts Were Full"]
+    ]
+  },
+  wallart: {
+    label: "🖼️ Wall Art",
+    items: [
+      ["../wall-art/print-01-amara.png", "Print 1 — Amara, Pumpkin Basket (8×10)"],
+      ["../wall-art/print-02-micah.png", "Print 2 — Micah, Pumpkin Basket (8×10)"],
+      ["../wall-art/print-03-siblings-meadow.png", "Print 3 — Siblings in the Meadow (8×10)"],
+      ["../assets/amara/amara-scripture-james-1-17.png", "Print 4 — Amara · James 1:17"],
+      ["../assets/micah/micah-scripture-philippians-4-13.png", "Print 5 — Micah · Philippians 4:13"],
+      ["../wall-art/print-06-psalm-107-1.png", "Print 6 — Siblings · Psalm 107:1"]
+    ]
+  }
+};
+
+let section = "book", idx = 0;
+const $ = id => document.getElementById(id);
+const tabsEl = $("tabs"), main = $("main"), cap = $("cap"),
+      count = $("count"), thumbs = $("thumbs");
+
+function buildTabs(){
+  tabsEl.innerHTML = "";
+  for (const key of Object.keys(DATA)){
+    const b = document.createElement("button");
+    b.className = "tab" + (key === section ? " active" : "");
+    b.innerHTML = `${DATA[key].label} <span class="n">(${DATA[key].items.length})</span>`;
+    b.onclick = () => { section = key; idx = 0; buildTabs(); render(); };
+    tabsEl.appendChild(b);
+  }
+}
+function render(){
+  const items = DATA[section].items;
+  const [src, title] = items[idx];
+  main.src = src; main.alt = title;
+  main.onclick = () => window.open(src, "_blank");
+  cap.textContent = title;
+  count.textContent = `${idx + 1} / ${items.length}`;
+  $("prev").disabled = idx === 0;
+  $("next").disabled = idx === items.length - 1;
+  thumbs.innerHTML = "";
+  items.forEach(([s, t], i) => {
+    const im = document.createElement("img");
+    im.src = s; im.alt = t; im.title = t;
+    if (i === idx) im.className = "sel";
+    im.onclick = () => { idx = i; render(); };
+    thumbs.appendChild(im);
+  });
+  const sel = thumbs.querySelector(".sel");
+  if (sel) sel.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+}
+$("prev").onclick = () => { if (idx > 0){ idx--; render(); } };
+$("next").onclick = () => { if (idx < DATA[section].items.length - 1){ idx++; render(); } };
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowLeft") $("prev").click();
+  if (e.key === "ArrowRight") $("next").click();
+});
+buildTabs();
+render();
+</script>
+</body>
+</html>
